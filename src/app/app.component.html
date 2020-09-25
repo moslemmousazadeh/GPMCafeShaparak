@@ -363,9 +363,43 @@
    <div [style.color]="color" >
     Hell class binding sss!!!
   </div>
-  <h1 [style.font-size.px]='50' >
+  <h1 [style.font-size-px]='50' >
     Hell class binding sss!!!
   </h1>
+
+  <h2 [style.color]="flag? 'Red' :'deepskyblue'"  >
+    Angular
+  </h2>
+  <button (click)="showcolor()"> change color </button>
+  <br>
+  <table>
+    <tr>
+      <th>Full Name</th>
+      <th>Email</th>
+      <th>Phone</th>
+    </tr>
+    <tr *ngIf="hide">
+      <td>{{fullname}}</td>
+      <td>{{email}}</td>
+      <td>{{phone}}</td>
+    </tr>
+    <tr *ngIf="hide">
+      <td>{{fullname}}</td>
+      <td>{{email}}</td>
+      <td>{{phone}}</td>
+    </tr>
+  </table>
+  <br>
+
+  <button (click)='show()'> Hide TD </button>
+  <br>
+  <p>
+    <input type="text" #Myinputtext placeholder="Please enter name !" (keyup.enter)="clickMyinputtext(Myinputtext)">
+     <br>
+    <button (click)="clickMyinputtext(Myinputtext)" > Click </button>
+  </p>
+
+
   <!-- Resources -->
   <h2>Resources</h2>
   <p>Here are some links to help you get started:</p>

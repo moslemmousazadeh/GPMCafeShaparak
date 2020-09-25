@@ -19,4 +19,18 @@ export class AppComponent {
   myclass = 'my1';
   myclass2 = 'my2';
   color = 'green';
+  fullname = 'Moslem Mousazadeh';
+  email = 'MoslemMousazadeh@yahoo.com';
+  phone = '0918229010';
+  hide = false;
+  showcolor(): void{
+    this.flag = !this.flag;
+  }
+  show(): void {
+    this.hide = !this.hide;
+  }
+  // tslint:disable-next-line:typedef
+  clickMyinputtext(e) {
+    console.log(e.value);
+  }
 }
