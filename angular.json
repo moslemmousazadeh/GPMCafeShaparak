@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "GPMCafeShaparak"
+    }
+  },
+  "defaultProject": "GPMCafeShaparak",
+  "cli": {
+    "analytics": "014869d1-959f-4d25-8ac2-41a3286ed53c"
+  }
 }
