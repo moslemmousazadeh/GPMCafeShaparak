@@ -331,14 +331,41 @@
     </svg>
 
     <span>{{ title }} app is running!</span>
-
     <svg id="rocket-smoke" alt="Rocket Ship Smoke" xmlns="http://www.w3.org/2000/svg" width="516.119" height="1083.632" viewBox="0 0 516.119 1083.632">
       <path id="Path_40" data-name="Path 40" d="M644.6,141S143.02,215.537,147.049,870.207s342.774,201.755,342.774,201.755S404.659,847.213,388.815,762.2c-27.116-145.51-11.551-384.124,271.9-609.1C671.15,139.365,644.6,141,644.6,141Z" transform="translate(-147.025 -140.939)" fill="#f5f5f5"/>
     </svg>
 
   </div>
+  <!--
+  <h2> sum 12 + 8 = {{12 + 8}}</h2>
+  <span> Full Name is {{ firsName +" "+ lastName}} </span>
+  <h1>{{WebSiteName}} WebSiteName</h1>
   <Course></Course>
+  <h1>WebSiteName:{{WebSiteName.toUpperCase()}}</h1>
   <app-about></app-about>
+
+  <span>
+    <p>
+      Interpolation :<input type="text" value={{firsName}} id="txt1" disabled={{flag}}>
+      <br>
+      <br>
+      Property Binding : <input type="text" [value]="lastName" id="txt2" [disabled]="flag">
+    </p>
+  </span>
+  -->
+
+  <div [className]="myclass">
+    Hello class binding !!!
+  </div>
+  <div [className]="myclass2">
+    Hello class binding !!!
+  </div>
+   <div [style.color]="color" >
+    Hell class binding sss!!!
+  </div>
+  <h1 [style.font-size.px]='50' >
+    Hell class binding sss!!!
+  </h1>
   <!-- Resources -->
   <h2>Resources</h2>
   <p>Here are some links to help you get started:</p>

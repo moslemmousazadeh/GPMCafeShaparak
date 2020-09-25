@@ -12,4 +12,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Title Project MoslemMousazadeh.Com';
+  WebSiteName = 'moslemmousazadeh.com';
+  firsName = 'Moslem';
+  lastName = 'Mousazadeh';
+  flag = false;
+  myclass = 'my1';
+  myclass2 = 'my2';
+  color = 'green';
 }
